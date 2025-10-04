@@ -1,13 +1,16 @@
 
 import './App.css'
-import AppShell from './components/AppShell'
+// import MoonStoneRecruitmentDemo from './components/MoonStoneRecruitmentDemo'
+import MoonstoneSimpleLanding from './components/MoonstoneSimpleLanding'
 
 function App() {
  
 
   return (
     <>
-      <AppShell />
+      {/* <AppShell /> */}
+      {/* <MoonStoneRecruitmentDemo /> */}
+      <MoonstoneSimpleLanding />
     </>
   )
 }
