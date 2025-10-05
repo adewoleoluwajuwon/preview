@@ -37,6 +37,7 @@ import {
   ChevronRight,
   X,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // -----------------------------
 // Types
@@ -309,6 +310,10 @@ export default function MoonStoneRecruitmentDemo() {
             </div>
           </NavbarLink>
         </NavbarCollapse>
+
+        <Link to="/" className="hidden md:inline-flex bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
+              Client's Approach
+          </Link>
       </Navbar>
 
       {/* ---------------- Hero / Search ---------------- */}
