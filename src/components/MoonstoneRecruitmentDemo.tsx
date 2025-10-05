@@ -267,8 +267,13 @@ export default function MoonStoneRecruitmentDemo() {
       >
         <NavbarBrand href="#home" className="gap-2">
           <div className="grid h-9 w-9 place-content-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white shadow-lg shadow-indigo-500/25">
-            <Briefcase size={18} />
-          </div>
+  <img
+    src="https://api.iconify.design/mdi:diamond-stone.svg?color=white"
+    alt="Moonstone logo"
+    className="h-5 w-5"
+  />
+</div>
+
           <span className="self-center whitespace-nowrap text-lg font-bold tracking-tight">
             Moonstone Recruitment
           </span>

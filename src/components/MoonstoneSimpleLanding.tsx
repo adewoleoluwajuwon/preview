@@ -10,8 +10,8 @@ import {
   TextInput,
   Badge,
 } from "flowbite-react";
-import { Search, MapPin, Briefcase } from "lucide-react";
-
+import { Search, MapPin} from "lucide-react";
+import { Link } from "react-router-dom";
 export default function MoonstoneSimpleLanding() {
   // simple light theme (no dark mode to keep it close to the wireframe)
   useEffect(() => {
@@ -32,14 +32,21 @@ export default function MoonstoneSimpleLanding() {
         rounded
         className="border-b border-gray-200 bg-white/90 backdrop-blur">
         <NavbarBrand href="#home" className="gap-2">
-          <div className="grid h-9 w-9 place-content-center rounded-md bg-gradient-to-br from-slate-600 to-slate-800 text-white">
-            <Briefcase size={16} />
-          </div>
+          <div className="grid h-9 w-9 place-content-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white shadow-lg shadow-indigo-500/25">
+  <img
+    src="https://api.iconify.design/mdi:diamond-stone.svg?color=white"
+    alt="Moonstone logo"
+    className="h-5 w-5"
+  />
+</div>
+
           <span className="text-sm font-semibold">Company Logo</span>
         </NavbarBrand>
         <div className="flex items-center gap-2 md:order-2">
           {/* Link to the modern page you already have */}
-          <Button href="/modern" color="indigo" className="hidden md:inline-flex">a modern approach</Button>
+          <Link to="/modern" className="hidden md:inline-flex bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
+              A Modern Approach
+          </Link>
           <NavbarToggle />
         </div>
         <NavbarCollapse>
@@ -58,7 +65,7 @@ export default function MoonstoneSimpleLanding() {
 
       {/* Hero card */}
       <header id="home" className="relative mx-auto max-w-5xl px-4">
-        <div className="mx-auto mt-10 rounded-xl bg-[url('https://images.unsplash.com/photo-1507209696998-3c532be9b2b1?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center shadow-md">
+        <div className="mx-auto mt-10 rounded-xl bg-blue-950 bg-cover bg-center shadow-md">
           <div className="rounded-xl bg-slate-900/70 p-6 sm:p-8">
             <h1 className="text-center text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">
               Simplest Pathway To
@@ -100,7 +107,7 @@ export default function MoonstoneSimpleLanding() {
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <span className="font-semibold">Browse Jobs:</span>
             {categories.map((c) => (
-              <Badge key={c} color="indigo" className="bg-slate-700">
+              <Badge key={c} color="indigo" className="">
                 {c}
               </Badge>
             ))}
@@ -108,7 +115,7 @@ export default function MoonstoneSimpleLanding() {
         </div>
 
         <p className="mx-auto mt-10 max-w-3xl text-center text-xs text-gray-500">
-          For the other pages on the landing page, follow the same structure and also, we are open to suggestions
+          For the other pages on the landing page, we are to follow the same structure. For suggestions, click the modern approach button.
         </p>
       </header>
     </div>

@@ -1,6 +1,8 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-// import MoonStoneRecruitmentDemo from './components/MoonStoneRecruitmentDemo'
+import MoonStoneRecruitmentDemo from './components/MoonstoneRecruitmentDemo'
+
 import MoonstoneSimpleLanding from './components/MoonstoneSimpleLanding'
 
 function App() {
@@ -8,9 +10,12 @@ function App() {
 
   return (
     <>
+    <Routes>
       {/* <AppShell /> */}
-      {/* <MoonStoneRecruitmentDemo /> */}
-      <MoonstoneSimpleLanding />
+      <Route path="/" element= {<MoonstoneSimpleLanding />} />
+      <Route path="/modern" element= {<MoonStoneRecruitmentDemo />} />
+      <Route path="*" element={<MoonstoneSimpleLanding />} />
+      </Routes>
     </>
   )
 }
