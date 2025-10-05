@@ -40,7 +40,7 @@ export default function MoonstoneSimpleLanding() {
   />
 </div>
 
-          <span className="text-sm font-semibold">Company Logo</span>
+          <span className="text-2xl text-blue-300 font-semibold">Company Logo</span>
         </NavbarBrand>
         <div className="flex items-center gap-2 md:order-2">
           {/* Link to the modern page you already have */}
