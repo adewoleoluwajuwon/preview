@@ -14,7 +14,7 @@ function App() {
       {/* <AppShell /> */}
       <Route path="/" element= {<MoonstoneSimpleLanding />} />
       <Route path="/modern" element= {<MoonStoneRecruitmentDemo />} />
-      <Route path="*" element={<MoonstoneSimpleLanding />} />
+      
       </Routes>
     </>
   )
